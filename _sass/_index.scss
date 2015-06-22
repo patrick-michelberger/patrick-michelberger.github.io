@@ -8,7 +8,11 @@
 }
 
 #pm_description h1 {
-    margin-top: 60px;
+    margin-top: 40px;
+}
+
+#pm_description .pm_hint {
+	margin-top: 15px;
 }
 
 #pm_description .pm_social_profiles {
@@ -32,4 +36,8 @@
 
 #pm_projects .media-heading {
 	font-weight: 500;
+}
+
+#pm_skills {
+	margin-top: 25px;
 }
