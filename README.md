@@ -1,3 +1,3 @@
 # Hi, this is my personal website
 
-pmichelberger.github.io
+patrick-michelberger.github.io

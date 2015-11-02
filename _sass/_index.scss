@@ -3,7 +3,7 @@
  */
 
 #pm_description {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -12,7 +12,7 @@
 }
 
 #pm_description .pm_hint {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 #pm_description .pm_social_profiles {
@@ -21,23 +21,27 @@
 }
 
 #pm_description .pm_contact-btn {
-	margin-top: 10px;
+    margin-top: 10px;
+}
+
+.pm-profile-picture {
+    margin-top: 45px;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
 }
 
 .main {
-	margin: 40px 15px;
+    margin: 40px 15px;
 }
-
 
 #pm_projects .pm_list {
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
-
 #pm_projects .media-heading {
-	font-weight: 500;
+    font-weight: 500;
 }
 
 #pm_skills {
-	margin-top: 25px;
+    margin-top: 25px;
 }
