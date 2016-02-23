@@ -5,35 +5,91 @@
     <description></description>
     <link>http://patrick.michelberger.info/</link>
     <atom:link href="http://patrick.michelberger.info/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Feb 2016 12:09:47 +0100</pubDate>
-    <lastBuildDate>Tue, 23 Feb 2016 12:09:47 +0100</lastBuildDate>
+    <pubDate>Tue, 23 Feb 2016 15:19:57 +0100</pubDate>
+    <lastBuildDate>Tue, 23 Feb 2016 15:19:57 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Building An E-Commerce App With Node.js &amp; The ABOUT YOU API</title>
+        <description>&lt;p&gt;ABOUT YOU is a new fashion online shop with more than 55.000 products and offers an outstanding developer platform to create your own E-commerce app.
+You write the code to build the showcase, ABOUT YOU manages the whole backend, payment &amp;amp; fulfillment process.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*oqu-8sEwvDuqQpTeYco5Kw.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;This is going to be a tutorial which consists of three parts:
+Initial setup, using the ABOUT YOU SDK for Node.js and creating an UI with a shopping basket.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;part-i-initial-setup&quot;&gt;Part I: Initial setup&lt;/h3&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For the first part of this tutorial I show you the inital setup &amp;amp; required packages to build our Node.js web app.&lt;/p&gt;
 
+&lt;h4 id=&quot;packages&quot;&gt;Packages&lt;/h4&gt;
+
+&lt;p&gt;Our application uses the Express framework which can be considered the de facto standard for Node.js development.
+I assume that you’ve got the node &amp;amp; npm executables setup already.&lt;/p&gt;
+
+&lt;h4 id=&quot;installing-express&quot;&gt;Installing Express&lt;/h4&gt;
+
+&lt;p&gt;To install Express globally use the following command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g express
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After that we’re going to create a new folder and use Express to setup a default Node.js project&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir testapp
+cd testapp
+express --hbs
+npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;app.js is basically the skeleton of your application and is mainly responsible for bootstrapping your application.
+package.json contains all requirements and should look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+  &quot;name&quot;: &quot;testapp&quot;,
+  &quot;version&quot;: &quot;0.0.0&quot;,
+  &quot;private&quot;: true,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;node ./bin/www&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;express&quot;: &quot;~4.9.0&quot;,
+    &quot;body-parser&quot;: &quot;~1.8.1&quot;,
+    &quot;cookie-parser&quot;: &quot;~1.3.3&quot;,
+    &quot;morgan&quot;: “~1.3.0&quot;,
+    &quot;serve-favicon&quot;: &quot;~2.1.3&quot;,
+    &quot;debug&quot;: &quot;~2.0.0&quot;,
+    &quot;hbs&quot;: &quot;~2.7.0&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next to Express we defined handlebars for rendering our server-side templates. In your app.js we can get rid of the following lines.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var users = require(‘./routes/users’);
+app.use(&#39;/users&#39;, users);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also delete /routes/users.js as we are not going to need it for the project.
+In this tutorial most of the implementation is going to happen in routes/index.js. This is the place where we define the functions to be executed when our application receives HTTP requests.
+You can run the project by executing&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in your project’s root folder and navigate to http://localhost:3000. Please note, npm start is an alias for node ./bin/www defined in the package.json file.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*5Nr4CbBUkZQXfCOf9hItBA.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration in the following part of this tutorial.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Jun 2015 15:47:59 +0200</pubDate>
-        <link>http://patrick.michelberger.info/jekyll/update/2015/06/22/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://patrick.michelberger.info/jekyll/update/2015/06/22/welcome-to-jekyll.html</guid>
+        <pubDate>Tue, 23 Feb 2016 13:00:00 +0100</pubDate>
+        <link>http://patrick.michelberger.info/tutorial/2016/02/23/building-an-e-commerce-app.html</link>
+        <guid isPermaLink="true">http://patrick.michelberger.info/tutorial/2016/02/23/building-an-e-commerce-app.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>tutorial</category>
         
       </item>
     

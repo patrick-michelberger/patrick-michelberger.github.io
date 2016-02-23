@@ -19,6 +19,9 @@ body {
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
+hr {
+  margin: 25px -15px; }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -174,7 +177,10 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-weight: 100;
+    margin-left: 20px;
+    font-size: 14px; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -274,8 +280,7 @@ pre {
   color: #828282; }
 
 .post-link {
-  display: block;
-  font-size: 24px; }
+  display: block; }
 
 /**
  * Posts
@@ -309,6 +314,20 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    background-color: #fdfdfd;
+    text-align: right;
+    height: 38px;
+    border-radius: 0;
+    border: none; }
+
+  .site-nav:hover .trigger {
+    background-color: white;
+    margin-top: 36px; } }
 /**
  * Syntax highlighting styles
  */
@@ -485,5 +504,45 @@ pre {
 #pm_skills {
   margin-top: 25px; }
 
+#pm_projects iframe {
+  position: absolute;
+  margin-top: -15px;
+  -ms-zoom: 0.60;
+  -moz-transform: scale(0.6);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.6);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.6);
+  -webkit-transform-origin: 0 0; }
+
+#pm_blog h2,
+#pm_blog h3 {
+  font-family: "Amatic SC", cursive; }
+
+#pm_blog h2 {
+  font-size: 36px;
+  font-weight: bold; }
+
+#pm_blog h2 a {
+  color: black; }
+
+#pm_blog h3 {
+  margin-top: 20px;
+  font-size: 28px; }
+
+#pm_blog h4 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold; }
+
 .pm_justify {
   text-align: justify; }
+
+.pm_text_minor {
+  font-size: 12px; }
+
+.pm_text_normal {
+  font-size: 14px; }
+
+p {
+  margin-bottom: 5px; }

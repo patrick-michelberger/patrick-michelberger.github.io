@@ -46,9 +46,23 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "index"
+        "index",
+        "projects",
+        "blog"
 ;
 
 .pm_justify {
 	text-align: justify;
+}
+
+.pm_text_minor {
+	font-size: 12px;
+}
+
+.pm_text_normal {
+    font-size: 14px;
+}
+
+p {
+    margin-bottom: 5px;
 }

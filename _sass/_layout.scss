@@ -29,6 +29,9 @@
         color: $text-color;
         line-height: $base-line-height;
         // Gaps between nav items, but not on the first on
+        font-weight: 100;
+        margin-left: 20px;
+        font-size: 14px;
     }
     @include media-query($on-palm) {
         position: absolute;
@@ -192,7 +195,6 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
 }
 /**
  * Posts
@@ -231,4 +233,21 @@
             font-size: 18px;
         }
     }
+}
+
+@media screen and (max-width: 600px) {
+     .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        background-color: #fdfdfd;
+        text-align: right;
+        height: 38px;
+        border-radius: 0;
+        border: none;
+    }  
+    .site-nav:hover .trigger {
+        background-color: white;
+        margin-top: 36px;
+    } 
 }
