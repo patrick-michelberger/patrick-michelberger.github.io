@@ -14,12 +14,14 @@ permalink: /academic/
 
       <div class="media-body">
         <a href="http://www11.in.tum.de/forschung/projekte/webcdn" target="_blank">
-          <h4 class="media-heading">
-          <b>WebCDN - A Content Distribution Network from web browsers using WebRTC</b></h4>
+          <h2 class="media-heading">
+          <b>WebCDN - A Content Distribution Network from web browsers using WebRTC</b></h2>
         </a>
+        <span class="pm_text_normal">
         Group of Applied Informatics - Cooperative Systems. <em>Bachelor's Thesis</em>
+        </span>
         <p class="pm_justify">
-        <div class="pm_text_minor" style="margin-top:20px;">
+        <div class="pm_text_normal" style="margin-top:20px;">
         <p>
   	   	<b>Responsible:</b> Prof. Dr. Johann Schlichter 
   	  </p>

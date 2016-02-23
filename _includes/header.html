@@ -12,10 +12,18 @@
       </a>
 
       <div class="trigger">
-        <a class="page-link" href="/">About Me</a>
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% if page.url == "/index.html" %}
+          <a class="page-link current" href="/">About Me</a>
+        {% else %}
+          <a class="page-link" href="/">About Me</a>
+        {% endif %}
+        {% for node in site.pages %}
+          {% if node.title %}
+              {% if node.url == page.url %}
+                <a class="page-link current" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+              {% else %}
+                <a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+              {% endif %}
           {% endif %}
         {% endfor %}
       </div>

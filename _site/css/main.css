@@ -31,7 +31,7 @@ ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Amatic SC', cursive; }
 
 /**
@@ -70,7 +70,6 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: #333;
-  font-weight: 500;
   text-decoration: none; }
   a:visited {
     color: #1756a9; }
@@ -181,6 +180,8 @@ pre {
     font-weight: 100;
     margin-left: 20px;
     font-size: 14px; }
+  .site-nav .page-link.current {
+    font-weight: bold; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -323,7 +324,8 @@ pre {
     text-align: right;
     height: 38px;
     border-radius: 0;
-    border: none; }
+    border: none;
+    z-index: 100; }
 
   .site-nav:hover .trigger {
     background-color: white;
@@ -472,7 +474,8 @@ pre {
  */
 #pm_description {
   margin-bottom: 15px;
-  text-align: center; }
+  text-align: center;
+  font-size: 14px; }
 
 #pm_description h1 {
   margin-top: 40px; }
@@ -489,8 +492,8 @@ pre {
 
 .pm-profile-picture {
   margin-top: 45px;
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%); }
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); }
 
 .main {
   margin: 40px 15px; }
@@ -520,6 +523,8 @@ pre {
   font-family: "Amatic SC", cursive; }
 
 #pm_blog h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 36px;
   font-weight: bold; }
 
@@ -535,6 +540,9 @@ pre {
   font-size: 16px;
   font-weight: bold; }
 
+#pm_blog img {
+  margin: 25px 0; }
+
 .pm_justify {
   text-align: justify; }
 
@@ -543,6 +551,9 @@ pre {
 
 .pm_text_normal {
   font-size: 14px; }
+
+.main {
+  margin: 0px 15px; }
 
 p {
   margin-bottom: 5px; }

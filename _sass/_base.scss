@@ -37,7 +37,7 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Amatic SC', cursive;
 }
 
@@ -93,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: #333;
-    font-weight: 500;
     text-decoration: none;
 
     &:visited {
