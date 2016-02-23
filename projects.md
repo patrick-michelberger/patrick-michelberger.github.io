@@ -7,7 +7,7 @@ permalink: /projects/
 <div class="main">
   <section id="pm_projects" class="row">
     <div class="pm_list">
-      <div class="media">
+      <div class="media hidden-xs">
         <div class="media-body" style="height:500px;">
           <div class="hidden-xs col-sm-6 ">
           <iframe src="http://about-looks.herokuapp.com/app" scrolling="no" style="border-style: none;width: 500px; height: 800px;margin-left:-15px;"></iframe>
@@ -29,6 +29,17 @@ permalink: /projects/
             Shoppe deine Lieblingsteile mobil über die App oder bequem von zuhause aus auf ABOUT YOU.
           </p>
           </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="media">
+      <div class="media-left"> <a href="https://play.google.com/store/apps/details?id=de.aboutyou.editd" target="_blank"> <img class="media-object" src="https://lh4.ggpht.com/puK_Vjm0AUXGDdjEri4uxENYUyROW0B9tt36-_Oqk_k9P0xlI2_8EHvJjjrhQU7-cQ=w300-rw" style="width: 64px; height: 64px;"> </a> </div>
+        <div class="media-body pm_text_normal">
+          <a width="140" href="" target="_blank">
+            <h2 class="media-heading">ABOUT LOOKS</h2>
+          </a> 
+          Jeder Look dein Style? Tinder for Fashion.<p>
+          </p>
         </div>
       </div>
       <hr/>
