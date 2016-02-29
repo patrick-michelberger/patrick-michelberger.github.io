@@ -13,7 +13,7 @@ permalink: /projects/
           <iframe src="http://about-looks.herokuapp.com/app" scrolling="no" style="border-style: none;width: 500px; height: 800px;margin-left:-15px;"></iframe>
           </div>
           <div class="pm_description pm_text_normal col-xs-12 col-sm-offset-6 col-sm-6">
-          <img width="100" src="https://lh4.ggpht.com/puK_Vjm0AUXGDdjEri4uxENYUyROW0B9tt36-_Oqk_k9P0xlI2_8EHvJjjrhQU7-cQ=w300-rw"/>
+          <img width="100" src="/images/about-looks-play-icon.png"/>
           <h2>Jeder Look dein Style?</h2>
           <br/>
           <p>
@@ -33,7 +33,7 @@ permalink: /projects/
       </div>
       <hr/>
       <div class="media">
-      <div class="media-left"> <a href="https://play.google.com/store/apps/details?id=de.aboutyou.editd" target="_blank"> <img class="media-object" src="https://lh4.ggpht.com/puK_Vjm0AUXGDdjEri4uxENYUyROW0B9tt36-_Oqk_k9P0xlI2_8EHvJjjrhQU7-cQ=w300-rw" style="width: 64px; height: 64px;"> </a> </div>
+      <div class="media-left"> <a href="https://play.google.com/store/apps/details?id=de.aboutyou.editd" target="_blank"> <img class="media-object" src="/images/about-looks-play-icon.png" style="width: 64px; height: 64px;"> </a> </div>
         <div class="media-body pm_text_normal">
           <a width="140" href="" target="_blank">
             <h2 class="media-heading">ABOUT LOOKS</h2>
