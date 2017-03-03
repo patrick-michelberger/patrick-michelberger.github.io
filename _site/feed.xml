@@ -5,9 +5,26 @@
     <description></description>
     <link>http://patrick.michelberger.info/</link>
     <atom:link href="http://patrick.michelberger.info/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Mar 2017 18:20:59 +0100</pubDate>
-    <lastBuildDate>Fri, 03 Mar 2017 18:20:59 +0100</lastBuildDate>
+    <pubDate>Fri, 03 Mar 2017 19:40:52 +0100</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2017 19:40:52 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Thing Translator: My Italian language assistant</title>
+        <description>&lt;p&gt;For my time in beautiful Milan I built a little language assistant to improve my Italian skills in the next 6 months. It lets you take a picture of something to hear how to say it in Italian. It’s just one example of what you can make using Google’s machine learning API’s, without needing to dive into the details of machine learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/patrick-michelberger/babel/blob/master/examples/coffee.png?raw=true&quot; class=&quot;img img-responsive&quot; style=&quot;max-width:350px;margin:0 auto;margin-bottom:25px;margin-top:25px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I plan to improve the app over the course of my stay abroad. The current code can be found here &lt;a href=&quot;https://github.com/patrick-michelberger/babel&quot; target=&quot;_blank&quot;&gt;https://github.com/patrick-michelberger/babel&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Mar 2017 13:00:00 +0100</pubDate>
+        <link>http://patrick.michelberger.info/app/2017/03/03/Thing-Translator-App.html</link>
+        <guid isPermaLink="true">http://patrick.michelberger.info/app/2017/03/03/Thing-Translator-App.html</guid>
+        
+        
+        <category>app</category>
+        
+      </item>
     
       <item>
         <title>Building An E-Commerce App With Node.js &amp; The ABOUT YOU API</title>
@@ -82,7 +99,7 @@ You can run the project by executing&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*5Nr4CbBUkZQXfCOf9hItBA.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration. &lt;/p&gt;
+&lt;p&gt;Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration.&lt;/p&gt;
 
 &lt;h2 id=&quot;part-ii-about-you-sdk&quot;&gt;Part II: ABOUT YOU SDK&lt;/h2&gt;
 
@@ -115,10 +132,10 @@ To do so, create a new application and take a look on the overview page. There y
 
 &lt;p&gt;We need to add the ABOUT YOU SDK to our app.js file and initialize it with our sample App-ID and token. For the sake of convenience, we intercept each http request and bind the ay object to the req parameter.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var aboutYou = 
+&lt;pre&gt;&lt;code&gt;var aboutYou =
 require(&#39;aboutyou-sdk&#39;)(100,&#39;3ed93394c2b5ebd12c104b177b928ad0&#39;);
 // Make the AboutYou module accessible to our router
-app.use(function(req,res,next){ 
+app.use(function(req,res,next){
   req.aboutYou = aboutYou;
   next();
 });
@@ -152,7 +169,7 @@ To make your category tree accessible via an API call we’ll extend index.js wi
 
 &lt;pre&gt;&lt;code&gt;var express = require(&#39;express&#39;);
 var router = express.Router();
-var ay = 
+var ay =
 require(&#39;aboutyou-sdk&#39;)(100,&#39;3ed93394c2b5ebd12c104b177b928ad0&#39;);
 /* GET home page. */
 router.get(&#39;/&#39;, function(req, res) {
@@ -193,11 +210,11 @@ module.exports = router;
 
 &lt;pre&gt;&lt;code&gt;router.get(&#39;/api/categories/:id/products&#39;, function(req, res) {
   var criteria = req.aboutYou.productSearchCriteria;
- 
+
   // search criteria settings
   criteria.filterByCategoryIds(req.params.id);
   criteria.selectProductFields([&#39;brand_id&#39;, &#39;default_image&#39;]);
-  // execute product search 
+  // execute product search
   req.aboutYou.fetchProductSearch(criteria, function(err, searchResult) {
     if(!err) {
       var products = searchResult.toJSON();

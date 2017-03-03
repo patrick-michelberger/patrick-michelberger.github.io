@@ -87,6 +87,21 @@
 	  <ul class="post-list">
 	    
 	      <li>
+	        <!--<span class="post-meta">Mar 3, 2017</span>-->
+	        <h2 style="margin-top:0px;">
+	          <a class="post-link" href="/app/2017/03/03/Thing-Translator-App.html">Thing Translator: My Italian language assistant</a>
+	        </h2>
+	        <div class="pm_justify pm_text_normal">
+	        	<p>For my time in beautiful Milan I built a little language assistant to improve my Italian skills in the next 6 months. It lets you take a picture of something to hear how to say it in Italian. It’s just one example of what you can make using Google’s machine learning API’s, without needing to dive into the details of machine learning.</p>
+
+<p><img src="https://github.com/patrick-michelberger/babel/blob/master/examples/coffee.png?raw=true" class="img img-responsive" style="max-width:350px;margin:0 auto;margin-bottom:25px;margin-top:25px;" /></p>
+
+<p>I plan to improve the app over the course of my stay abroad. The current code can be found here <a href="https://github.com/patrick-michelberger/babel" target="_blank">https://github.com/patrick-michelberger/babel</a>.</p>
+
+	        </div>
+	      </li>
+	    
+	      <li>
 	        <!--<span class="post-meta">Feb 23, 2016</span>-->
 	        <h2 style="margin-top:0px;">
 	          <a class="post-link" href="/tutorial/2016/02/23/building-an-e-commerce-app.html">Building An E-Commerce App With Node.js &amp; The ABOUT YOU API</a>
@@ -163,7 +178,7 @@ You can run the project by executing</p>
 
 <p><img src="https://cdn-images-1.medium.com/max/2000/1*5Nr4CbBUkZQXfCOf9hItBA.png" width="100%" /></p>
 
-<p>Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration. </p>
+<p>Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration.</p>
 
 <h2 id="part-ii-about-you-sdk">Part II: ABOUT YOU SDK</h2>
 
@@ -196,10 +211,10 @@ To do so, create a new application and take a look on the overview page. There y
 
 <p>We need to add the ABOUT YOU SDK to our app.js file and initialize it with our sample App-ID and token. For the sake of convenience, we intercept each http request and bind the ay object to the req parameter.</p>
 
-<pre><code>var aboutYou = 
+<pre><code>var aboutYou =
 require('aboutyou-sdk')(100,'3ed93394c2b5ebd12c104b177b928ad0');
 // Make the AboutYou module accessible to our router
-app.use(function(req,res,next){ 
+app.use(function(req,res,next){
   req.aboutYou = aboutYou;
   next();
 });
@@ -233,7 +248,7 @@ To make your category tree accessible via an API call we’ll extend index.js wi
 
 <pre><code>var express = require('express');
 var router = express.Router();
-var ay = 
+var ay =
 require('aboutyou-sdk')(100,'3ed93394c2b5ebd12c104b177b928ad0');
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -274,11 +289,11 @@ module.exports = router;
 
 <pre><code>router.get('/api/categories/:id/products', function(req, res) {
   var criteria = req.aboutYou.productSearchCriteria;
- 
+
   // search criteria settings
   criteria.filterByCategoryIds(req.params.id);
   criteria.selectProductFields(['brand_id', 'default_image']);
-  // execute product search 
+  // execute product search
   req.aboutYou.fetchProductSearch(criteria, function(err, searchResult) {
     if(!err) {
       var products = searchResult.toJSON();

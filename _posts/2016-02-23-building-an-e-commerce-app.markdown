@@ -26,13 +26,13 @@ I assume that you’ve got the node & npm executables setup already.
 
 To install Express globally use the following command
 
-~~~ 
+~~~
 npm install -g express
-~~~ 
+~~~
 
 After that we’re going to create a new folder and use Express to setup a default Node.js project
 
-~~~ 
+~~~
 mkdir testapp
 cd testapp
 express --hbs
@@ -64,24 +64,24 @@ package.json contains all requirements and should look something like this:
 
 Next to Express we defined handlebars for rendering our server-side templates. In your app.js we can get rid of the following lines.
 
-~~~ 
+~~~
 var users = require(‘./routes/users’);
 app.use('/users', users);
-~~~ 
+~~~
 
 Also delete /routes/users.js as we are not going to need it for the project.
 In this tutorial most of the implementation is going to happen in routes/index.js. This is the place where we define the functions to be executed when our application receives HTTP requests.
 You can run the project by executing
 
-~~~ 
+~~~
 npm start
-~~~ 
+~~~
 
 in your project’s root folder and navigate to http://localhost:3000. Please note, npm start is an alias for node ./bin/www defined in the package.json file.
 
 <img src="https://cdn-images-1.medium.com/max/2000/1*5Nr4CbBUkZQXfCOf9hItBA.png" width="100%"/>
 
-Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration. 
+Congratulations, we have finished all the required setup and we can now concentrate on the ABOUT YOU SDK integration.
 
 ## Part II: ABOUT YOU SDK
 
@@ -117,10 +117,10 @@ For the sake of convenience we’re going to use the test credentials that allow
 We need to add the ABOUT YOU SDK to our app.js file and initialize it with our sample App-ID and token. For the sake of convenience, we intercept each http request and bind the ay object to the req parameter.
 
 ~~~
-var aboutYou = 
+var aboutYou =
 require('aboutyou-sdk')(100,'3ed93394c2b5ebd12c104b177b928ad0');
 // Make the AboutYou module accessible to our router
-app.use(function(req,res,next){ 
+app.use(function(req,res,next){
   req.aboutYou = aboutYou;
   next();
 });
@@ -156,7 +156,7 @@ To make your category tree accessible via an API call we’ll extend index.js wi
 ~~~
 var express = require('express');
 var router = express.Router();
-var ay = 
+var ay =
 require('aboutyou-sdk')(100,'3ed93394c2b5ebd12c104b177b928ad0');
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -199,11 +199,11 @@ To get this data, we need again a new route in our application and we’re going
 ~~~
 router.get('/api/categories/:id/products', function(req, res) {
   var criteria = req.aboutYou.productSearchCriteria;
- 
+
   // search criteria settings
   criteria.filterByCategoryIds(req.params.id);
   criteria.selectProductFields(['brand_id', 'default_image']);
-  // execute product search 
+  // execute product search
   req.aboutYou.fetchProductSearch(criteria, function(err, searchResult) {
     if(!err) {
       var products = searchResult.toJSON();
