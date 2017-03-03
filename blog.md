@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mein Block
+title: My Blog
 permalink: /block/
 ---
 

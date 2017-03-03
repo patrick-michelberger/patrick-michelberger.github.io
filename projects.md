@@ -37,18 +37,22 @@ permalink: /projects/
         <div class="media-body pm_text_normal">
           <a width="140" href="" target="_blank">
             <h2 class="media-heading">ABOUT LOOKS</h2>
-          </a> 
+          </a>
           Jeder Look dein Style? Tinder for Fashion.<p>
           </p>
         </div>
       </div>
       <hr/>
       <div class="media">
-      <div class="media-left"> <a href="http://www.aboutyou.de/" target="_blank"> <img class="media-object" src="http://corporate.aboutyou.de/wp-content/uploads/2015/09/aboutyou_logo.jpg" style="width: 64px; height: 64px;"> </a> </div>
+        <div class="media-left">
+          <a href="http://www.aboutyou.de/" target="_blank">
+            <img class="media-object" src="http://corporate.aboutyou.de/wp-content/uploads/2015/09/aboutyou_logo.jpg" style="width: 64px; height: 64px;">
+          </a>
+        </div>
         <div class="media-body pm_text_normal">
           <a width="140" href="https://github.com/aboutyou/aboutyou-nodejs-sdk" target="_blank">
             <h2 class="media-heading">ABOUT YOU Javascript SDK</h2>
-          </a> 
+          </a>
           Shop API interface for the German online fashion shop ABOUT YOU.
           <p>
           <a href="https://developer.aboutyou.de/blog/2014/12/node-js-ruby-sdks-veroeffentlicht/" target="_blank">
@@ -59,11 +63,37 @@ permalink: /projects/
       </div>
       <hr/>
       <div class="media">
-
- <div class="media-left"><img class="media-object" src="http://33.media.tumblr.com/avatar_a108ff645075_128.png" style="width: 64px; height: 64px;"> </a> </div>
-
-
-
+        <div class="media-left">
+          <a href="https://itunes.apple.com/de/app/neptun-diabetes-management/id1152971508?mt=8" target="_blank">
+            <img class="media-object" src="/images/roche.jpg" style="width: 64px;">
+          </a>
+        </div>
+        <div class="media-body pm_text_normal">
+          <a width="140" href="https://itunes.apple.com/de/app/neptun-diabetes-management/id1152971508?mt=8" target="_blank">
+            <h2 class="media-heading">Neptun 2: Diabetes Management</h2>
+          </a>
+          Neptun 2 is an app that helps diabetics to manage their therapy easier. By tracking blood sugar continuously and aggregating fitness as well as nutrition data from Apple's Health platform, Neptun 2 presents actionable information and recommendations to patients to improve their daily life. Using Apple CareKit Neptun 2 helps to stay in contact with the medical advisor and adapt the therapy according to the CarePlan.
+        </div>
+      </div>
+      <hr/>
+      <div class="media">
+        <div class="media-left">
+          <a href="https://wwwmatthes.in.tum.de/pages/1tyvunuwmnyuo/Selected-Projects-SS-2016" target="_blank">
+            <img class="media-object" src="/images/walmart.png" style="width: 64px;">
+          </a>
+        </div>
+        <div class="media-body pm_text_normal">
+          <a width="140" href="https://wwwmatthes.in.tum.de/pages/1tyvunuwmnyuo/Selected-Projects-SS-2016" target="_blank">
+            <h2 class="media-heading">Project Fresh</h2>
+          </a>
+          project fresh is a e-shop to help flatmates order groceries comfortably at a cheaper price with a shared shopping cart and social payment process.
+        </div>
+      </div>
+      <hr/>
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="http://33.media.tumblr.com/avatar_a108ff645075_128.png" style="width: 64px; height: 64px;">
+        </div>
         <div class="media-body pm_text_normal">
           <a width="140" href="http://tablesurfer.de" target="_blank">
             <h2 class="media-heading">tablesurfer</h2>
@@ -78,9 +108,11 @@ permalink: /projects/
       </div>
       <hr/>
       <div class="media">
- <div class="media-left"><img class="media-object" src="http://www.atemmassage.de/wordpress/wp-content/uploads/Logo_MP_RZ.jpg" style="width: 64px; height: 64px;"> </a> </div>
-
-
+        <div class="media-left">
+          <a href="http://mountainprojects.de/" target="_blank">
+            <img class="media-object" src="http://www.atemmassage.de/wordpress/wp-content/uploads/Logo_MP_RZ.jpg" style="width: 64px; height: 64px;">
+          </a>
+        </div>
         <div class="media-body pm_text_normal">
           <a width="140" href="http://mountainprojects.de/" target="_blank">
             <h2 class="media-heading">MountainProjects e.V.</h2>
