@@ -7,7 +7,7 @@ permalink: /academic/
 <div class="main">
   <div class="master-thesis-hint alert alert-danger">
     <p>I'm currently in search for a <b>master thesis.</b> <br/><em>from August or September 2017, ~6 months</em></p>
-    <p>I have a strong background in <b>application development</b> and I have a keen interest in the area of <b>machine learning</b>, <b>data mining</b> and <b>data analysis</b>.</p>
+    <p>I have a strong background in <b>application development</b> and a keen interest in the area of <b>machine learning</b>, <b>data mining</b> and <b>data analysis</b>.</p>
   </div>
   <hr/>
   <section id="pm_academic-work" class="row">
@@ -37,9 +37,6 @@ permalink: /academic/
         The work evaluates potential resource savings, performance improvements and security concerns of a content distribution network (CDN) from client web browsers. The implementation leverages the WebRTC framework to
   distribute content between peers without relaying the data through an intermediate web server. The evaluation exploits a cloud computing infrastructure to access websites from automated browser instances located across multiple locations. Furthermore, a proxy server is used to inject the system's client component and simulate peer-to-peer content delivery with real websites.
       	</p>
-      	</div>
-      </div>
     </div>
-  </div>
   <hr/>
 </div>
