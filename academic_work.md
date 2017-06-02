@@ -4,13 +4,13 @@ title: My Academic Work
 permalink: /academic/
 ---
 
-<div class="main">
-  <div class="master-thesis-hint alert alert-danger">
+<div class="container">
+  <div class="master-thesis-hint alert alert-danger" style="text-decoration:line-through;">
     <p>I'm currently in search for a <b>master thesis.</b> <br/><em>from August or September 2017, ~6 months</em></p>
     <p>I have a strong background in <b>application development</b> and a keen interest in the area of <b>machine learning</b>, <b>data mining</b> and <b>data analysis</b>.</p>
   </div>
   <hr/>
-  <section id="pm_academic-work" class="row">
+  <section id="pm_academic-work">
   <div class="pm_list">
     <div class="media">
       <div class="media-left">

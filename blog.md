@@ -4,8 +4,8 @@ title: My Blog
 permalink: /block/
 ---
 
-<div class="main">
-	<section id="pm_blog" class="row">
+<div class="container">
+	<section id="pm_blog">
 	  <ul class="post-list">
 	    {% for post in site.posts %}
 	      <li>

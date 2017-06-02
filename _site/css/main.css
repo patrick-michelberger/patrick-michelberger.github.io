@@ -298,7 +298,6 @@ pre {
       font-size: 36px; } }
 
 .post-content {
-  margin-top: 60px;
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
@@ -565,20 +564,21 @@ p {
   border-radius: 0;
   margin-top: 15px; }
 
+.pm-featuring-wrapper {
+  background-color: #f4f5f6;
+  padding: 5rem;
+  color: #DDDDDDTT; }
 
-  .pm-featuring-wrapper {
-    background-color: #f4f5f6;
-    padding: 5rem;
-    color: #DDDDDDTT;
-  }
+.pm-featuring-wrapper .pm-container {
+  background: #fff;
+  padding: 15px; }
 
-  .pm-featuring-wrapper .pm-container {
-    background: #fff;
-    padding: 15px;
-  }
-
-  @media (min-width: 1200px) {
-    .container {
-      width: 970px;
-    }
-  }
+@media (min-width: 1200px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 768px) {
+  #pm_projects {
+    margin-top: 60px; } }
+@media (max-width: 767px) {
+  #pm_projects .pm_list {
+    margin-top: -40px; } }
