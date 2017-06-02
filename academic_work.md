@@ -49,7 +49,3 @@ permalink: /academic/
           </p>
         </div>
         <hr/>
-      </div>
-    </div>
-  </section>
-</div>
