@@ -125,6 +125,26 @@ permalink: /projects/
       </div>
     </div>
     <hr />
+
+<div class="media">
+  <div class="media-left">
+    <a href="https://www.amazon.de/feedme-Event-Guru-Entdecke-Konzerte/dp/B06Y66MBHF" target="_blank">
+      <img class="media-object" src="https://images-na.ssl-images-amazon.com/images/I/5116XanERVL.png" style="width: 64px; height: 64px;" />
+    </a>
+  </div>
+  <div class="media-body pm_text_normal">
+    <a width="140" href="https://www.amazon.de/feedme-Event-Guru-Entdecke-Konzerte/dp/B06Y66MBHF" target="_blank">
+      <h2 class="media-heading">Event Guru - Entdecke Konzerte</h2>
+    </a>
+    Alexa Skill to discover concerts in your city.
+    <p>
+      <a href="https://www.betterplace.org/de/projects/24636-mountainprojects-e-v-bildung-schenken-leben-andern" target="_blank">
+        Betterplace.org: MountainProjects e.V. Bildung schenken . Leben ändern
+      </a>
+    </p>
+  </div>
+</div>
+
     <div class="media">
       <div class="media-left">
         <a href="http://mountainprojects.de/" target="_blank">
