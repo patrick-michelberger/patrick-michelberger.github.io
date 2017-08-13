@@ -1,4 +1,7 @@
 #pm_projects iframe {
+	left: 50%;
+	margin-left: -150px!important;
+	margin-top: 45px!important;
 	position: absolute;
 	margin-top: -15px;
     -ms-zoom: 0.60;
@@ -10,5 +13,30 @@
     -webkit-transform-origin: 0 0;
 }
 
-#pm_projects .pm_description {
+
+#pm_projects {
+
+	.pm-hero {
+		p {
+			text-align: center;
+		}
+		a {
+			color: white;
+		}
+	}
+
+	h2 {
+		font-size: 30px!important;
+		line-height: 30px;
+	}
+
+	.headline-about-looks {
+		display: inline-block;
+		margin-left: 20px;
+		font-weight: normal;
+	}
+}
+
+#pm_projects .media-left {
+	padding-right: 35px!important;
 }

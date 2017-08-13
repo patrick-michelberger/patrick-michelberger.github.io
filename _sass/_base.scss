@@ -1,210 +1,42 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+
+html {
+  background: $background-color;
 }
-
-
 
 /**
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
-
-hr {
-    margin: 25px -15px;
-}
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Amatic SC', cursive;
+  font-family: $base-font-family;
 }
 
 
-
-/**
- * Images
- */
-img {
-    vertical-align: middle;
+h2 {
+  font-size: 48px;
+  line-height: 68px;
 }
 
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
+p {
+  font-size: 24px;
+  line-height: 42px;
 }
 
 
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+dd, dl, dt, li, ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
-
-
-
-/**
- * Links
- */
-a {
-    color: #333;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $brand-color;
-        text-decoration: none;
-    }
-
-    &:focus {
-        text-decoration: none;
-    }
-}
-
-/**
- * Buttons
- */
-
-.pm_btn-primary {
-    border-radius: 25px;
-    display: inline-block;
-    padding: 14px 28px 13px 28px;
-    line-height: 1;
-    border: 2px solid #ddd;
-    font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #333;
-}
-
-
-.pm_btn-black:hover {
-  background: #333;
-  color: #fff;
-  border-color: #333;
-}
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+@media (max-width: 767px) {
+  h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: .6px;
+    margin-bottom: 45px;
+  }
 }

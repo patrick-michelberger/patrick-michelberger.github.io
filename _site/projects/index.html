@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href=" /css/main.css ">
     <link rel="canonical" href="http://patrick.michelberger.info/projects/">
     <link rel="alternate" type="application/rss+xml" title="Patrick Michelberger" href="http://patrick.michelberger.info /feed.xml " />
@@ -20,27 +19,15 @@
 
       ga('create', 'UA-100390920-1', 'auto');
       ga('send', 'pageview');
-
     </script>
 </head>
 
 
 <body>
 
-<header class="site-header container">
-
-  <div class="wrapper">
-
+<!--<header class="site-header">
+  <div class="container-fluid">
     <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
         
           <a class="page-link" href="/">About Me</a>
         
@@ -51,10 +38,6 @@
               
           
         
-          
-              
-                <a class="page-link" href="/block/">My Blog</a>
-              
           
         
           
@@ -73,36 +56,85 @@
               
           
         
-      </div>
     </nav>
   </div>
+</header>
 
+-->
+<header class="pm-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        
+          <li><a  href="/">About Me</a></li>
+        
+          <li><a  target="_blank" href="https://medium.com/@patrickmichelberger">My Blog</a></li>
+        
+          
+              
+                <li><a class="page-link" href="/academic/">My Academic Work</a></li>
+              
+          
+        
+          
+        
+          
+        
+          
+        
+          
+              
+                <li><a class="active" href="/projects/">My Projects</a></li>
+              
+          
+        
+          
+              
+                <li><a class="page-link" href="/Imprint/">Imprint</a></li>
+              
+          
+        
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 </header>
 
 
-<div class="post">
+<div class="pm-page">
 
-  <header class="post-header container">
-    <h1 class="post-title">My Projects</h1>
-  </header>
+
+  
 
   <article class="post-content">
-    <div>
-<div class="pm-featuring-wrapper hidden-xs hidden-sm">
-  <div class="pm-container">
-    <iframe src="https://getshopmate.com" style="border-style: none;width: 100%; height: 850px;"></iframe>
+    <section id="pm_projects">
+  <div class="pm-hero">
+    <h1>My Projects</h1>
+    <p>I also have a <a href="https://github.com/patrick-michelberger" target="_blank">github profile</a> where I publish projects I am currently working on.</p>
   </div>
-</div>
-<section id="pm_projects" class="container">
-  <div class="pm_list">
+  <div class="pm_list container">
     <div class="media hidden-xs">
       <div class="media-body" style="height:500px;">
         <div class="hidden-xs col-sm-6 ">
         <iframe src="/about-looks/index.html" scrolling="no" style="border-style: none;width: 500px; height: 800px;margin-left:-15px;"></iframe>
         </div>
-        <div class="pm_description pm_text_normal col-xs-12 col-sm-offset-6 col-sm-6">
+        <div class="pm_description pm_text_normal col-xs-12 col-sm-6">
         <img width="100" src="/images/about-looks-play-icon.png" />
-        <h2>Jeder Look dein Style?</h2>
+
         <br />
         <p>
           <b>Get The Look.</b><br />
@@ -119,14 +151,17 @@
         </div>
       </div>
     </div>
+    <div class="hidden-xs">
     <hr />
+    </div>
     <div class="media">
-    <div class="media-left"> <a href="http://getshopmate.com" target="_blank"> <img class="media-object" src="/images/shopmate.png" style="width: 64px; height: 64px;" /> </a> </div>
+    <div class="media-left"> <a href="http://getshopmate.com" target="_blank"> <img class="media-object" src="/images/shopmate.png" style="width: 100px; height: 100px;" /> </a> </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="http://getshopmate.com" target="_blank">
           <h2 class="media-heading">Shopmate</h2>
         </a>
-        Shared shopping - right from Messenger.<p>
+        <p>
+        Shared shopping - right from Messenger.
         </p>
       </div>
     </div>
@@ -134,12 +169,13 @@
 
 
     <div class="media">
-    <div class="media-left"> <a href="https://play.google.com/store/apps/details?id=de.aboutyou.editd" target="_blank"> <img class="media-object" src="/images/about-looks-play-icon.png" style="width: 64px; height: 64px;" /> </a> </div>
+    <div class="media-left"> <a href="https://play.google.com/store/apps/details?id=de.aboutyou.editd" target="_blank"> <img class="media-object" src="/images/about-looks-play-icon.png" style="width: 100px; height: 100px;" /> </a> </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="" target="_blank">
           <h2 class="media-heading">ABOUT LOOKS</h2>
         </a>
-        Jeder Look dein Style? Tinder for Fashion.<p>
+        <p>
+        Jeder Look dein Style?
         </p>
       </div>
     </div>
@@ -147,14 +183,14 @@
     <div class="media">
       <div class="media-left">
         <a href="http://www.aboutyou.de/" target="_blank">
-          <img class="media-object" src="http://corporate.aboutyou.de/wp-content/uploads/2015/09/aboutyou_logo.jpg" style="width: 64px; height: 64px;" />
+          <img class="media-object" src="http://corporate.aboutyou.de/wp-content/uploads/2015/09/aboutyou_logo.jpg" style="width: 100px; height: 100px;" />
         </a>
       </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="https://github.com/aboutyou/aboutyou-nodejs-sdk" target="_blank">
           <h2 class="media-heading">ABOUT YOU Javascript SDK</h2>
         </a>
-        Shop API interface for the German online fashion shop ABOUT YOU.
+        <p>Shop API interface for the German online fashion shop ABOUT YOU.</p>
         <p>
         <a href="https://developer.aboutyou.de/blog/2014/12/node-js-ruby-sdks-veroeffentlicht/" target="_blank">
           Developer Blog: Node.js &amp; Ruby SDKs veröffentlicht
@@ -166,28 +202,28 @@
     <div class="media">
       <div class="media-left">
         <a href="https://itunes.apple.com/de/app/neptun-diabetes-management/id1152971508?mt=8" target="_blank">
-          <img class="media-object" src="/images/roche.jpg" style="width: 64px;" />
+          <img class="media-object" src="/images/roche.jpg" style="width: 100px;" />
         </a>
       </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="https://itunes.apple.com/de/app/neptun-diabetes-management/id1152971508?mt=8" target="_blank">
           <h2 class="media-heading">Neptun 2: Diabetes Management</h2>
         </a>
-        Neptun 2 is an app that helps diabetics to manage their therapy easier. By tracking blood sugar continuously and aggregating fitness as well as nutrition data from Apple's Health platform, Neptun 2 presents actionable information and recommendations to patients to improve their daily life. Using Apple CareKit Neptun 2 helps to stay in contact with the medical advisor and adapt the therapy according to the CarePlan.
+        <p>Neptun 2 is an app that helps diabetics to manage their therapy easier. By tracking blood sugar continuously and aggregating fitness as well as nutrition data from Apple's Health platform, Neptun 2 presents actionable information and recommendations to patients to improve their daily life. Using Apple CareKit Neptun 2 helps to stay in contact with the medical advisor and adapt the therapy according to the CarePlan.</p>
       </div>
     </div>
     <hr />
     <div class="media">
       <div class="media-left">
         <a href="https://wwwmatthes.in.tum.de/pages/1tyvunuwmnyuo/Selected-Projects-SS-2016" target="_blank">
-          <img class="media-object" src="/images/walmart.png" style="width: 64px;" />
+          <img class="media-object" src="/images/walmart.png" style="width: 100px;" />
         </a>
       </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="https://wwwmatthes.in.tum.de/pages/1tyvunuwmnyuo/Selected-Projects-SS-2016" target="_blank">
           <h2 class="media-heading">Project Fresh</h2>
         </a>
-        project fresh is a e-shop to help flatmates order groceries comfortably at a cheaper price with a shared shopping cart and social payment process.
+        <p>project fresh is a e-shop to help flatmates order groceries comfortably at a cheaper price with a shared shopping cart and social payment process.</p>
       </div>
     </div>
 
@@ -196,14 +232,14 @@
     <div class="media">
       <div class="media-left">
         <a href="https://www.amazon.de/feedme-Event-Guru-Entdecke-Konzerte/dp/B06Y66MBHF" target="_blank">
-          <img class="media-object" src="https://images-na.ssl-images-amazon.com/images/I/5116XanERVL.png" style="width: 64px; height: 64px;" />
+          <img class="media-object" src="https://images-na.ssl-images-amazon.com/images/I/5116XanERVL.png" style="width: 100px; height: 100px;" />
         </a>
       </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="https://www.amazon.de/feedme-Event-Guru-Entdecke-Konzerte/dp/B06Y66MBHF" target="_blank">
           <h2 class="media-heading">Event Guru - Entdecke Konzerte</h2>
         </a>
-        Development support for Amazon Alexa skill to discover concerts in your city.
+        <p>Development support for Amazon Alexa skill to discover concerts in your city.</p>
       </div>
     </div>
 
@@ -211,13 +247,13 @@
     <hr />
     <div class="media">
       <div class="media-left">
-        <img class="media-object" src="http://33.media.tumblr.com/avatar_a108ff645075_128.png" style="width: 64px; height: 64px;" />
+        <img class="media-object" src="http://33.media.tumblr.com/avatar_a108ff645075_128.png" style="width: 100px; height: 100px;" />
       </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="http://tablesurfer.de" target="_blank">
           <h2 class="media-heading">tablesurfer</h2>
         </a>
-        Cooking community for students
+        <p>Cooking community for students</p>
         <p>
           <a href="http://www.sz-jugendseite.de/das-perfekte-studenten-dinner/" target="_blank">
             Süddeutsche Zeitung: Das perfekte Studenten-Dinner
@@ -230,14 +266,14 @@
     <div class="media">
       <div class="media-left">
         <a href="http://mountainprojects.de/" target="_blank">
-          <img class="media-object" src="http://www.atemmassage.de/wordpress/wp-content/uploads/Logo_MP_RZ.jpg" style="width: 64px; height: 64px;" />
+          <img class="media-object" src="http://www.atemmassage.de/wordpress/wp-content/uploads/Logo_MP_RZ.jpg" style="width: 100px; height: 100px;" />
         </a>
       </div>
       <div class="media-body pm_text_normal">
         <a width="140" href="http://mountainprojects.de/" target="_blank">
           <h2 class="media-heading">MountainProjects e.V.</h2>
         </a>
-        Donate Education . Change Lives
+        <p>Donate Education . Change Lives</p>
         <p>
           <a href="https://www.betterplace.org/de/projects/24636-mountainprojects-e-v-bildung-schenken-leben-andern" target="_blank">
             Betterplace.org: MountainProjects e.V. Bildung schenken . Leben ändern
@@ -251,7 +287,7 @@
         <a href="http://www.cuecloud.de/#" target="_blank">
           <h2 class="media-heading">Cuecloud</h2>
         </a>
-        Worldwide live-music recommendation application. <em>University Course</em>
+        <p>Worldwide live-music recommendation application. <em>University Course</em></p>
       </div>
     </div>
     <hr />
@@ -260,19 +296,48 @@
         <a href="http://hackathons.de" target="_blank">
           <h2 class="media-heading">Hackathons.de</h2>
         </a>
-        Organization of Hackathons in Munich. <em>Former Web App Club, Technische Universität München</em>
+        <p>Organization of Hackathons in Munich. <em>Former Web App Club, Technische Universität München</em></p>
       </div>
     </div>
   </div>
   <hr />
 </section>
-</div>
 
   </article>
 
 </div>
 
 
+<footer class="site-footer">
+  <h2>Follow me</h2>
+    <ul class="contact-list">
+      <li>
+          <a href="https://github.com/patrick-michelberger/" target="_blank">
+              <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/patrick.michelberger" target="_blank">
+              <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.xing.com/profile/Patrick_Michelberger2" target="_blank">
+              <i class="fa fa-xing"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://de.linkedin.com/in/patrickmichelberger" target="_blank">
+              <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+      </div>
+    </ul>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

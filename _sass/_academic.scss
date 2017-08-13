@@ -1,0 +1,52 @@
+.academic {
+  .pm-hero {
+    h1 {
+        text-align: center
+    }
+
+    p {
+      text-align: center;
+    }
+    a {
+      color: white;
+    }
+
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  img {
+    width: 130px;
+  }
+}
+
+ @media (min-width: 1200px) {
+
+ }
+
+ @media (min-width: 768px) {
+   .academic {
+     h2 {
+       margin-top: 15px;
+       font-size: 48px;
+       line-height: 68px;
+       margin-bottom: 25px;
+     }
+
+     img {
+       float: right;
+     }
+
+     .headline {
+       margin-bottom: 25px;
+     }
+   }
+ }
+
+ @media (max-width: 767px) {
+   .tum-logo {
+     text-align: center;
+   }
+ }

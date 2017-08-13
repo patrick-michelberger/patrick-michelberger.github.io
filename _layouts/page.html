@@ -1,11 +1,14 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="pm-page">
 
-  <header class="post-header container">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+
+  {% if page.title.length > 0 %}
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+  {% endif %}
 
   <article class="post-content">
     {{ content }}
