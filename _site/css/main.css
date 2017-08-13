@@ -188,7 +188,7 @@ a:focus {
 
 @media (max-width: 767px) {
   .home .pm-hero {
-    padding: 150px 30px 30px 30px; }
+    padding: 100px 30px 30px 30px; }
     .home .pm-hero h1 {
       font-size: 42px;
       line-height: 42px; }
