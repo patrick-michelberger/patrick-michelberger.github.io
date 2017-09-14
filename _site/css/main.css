@@ -160,7 +160,16 @@ a:focus {
   top: 25px;
   position: relative; }
 .home .pm-hero {
-  height: 620px; }
+  background-image: linear-gradient(90deg, #232526, #fff), url("/images/website-cover.png");
+  background-size: cover;
+  background-color: white;
+  background-blend-mode: multiply, luminosity;
+  background-position: right top;
+  height: 100vh;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: left; }
   .home .pm-hero h1 {
     font-size: 90px;
     line-height: 90px;
@@ -168,7 +177,7 @@ a:focus {
     word-spacing: 1px;
     margin-bottom: 45px; }
   .home .pm-hero p {
-    text-align: center; }
+    text-align: left; }
 .home .image-container {
   position: relative;
   height: 450px; }
@@ -186,10 +195,11 @@ a:focus {
     height: 450px;
     width: 250px; }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .home .pm-hero {
-    padding: 100px 30px 30px 30px; }
-    .home .pm-hero h1 {
+    padding: 100px 30px 30px 30px;
+    height: 100vh; }
+    .home .pm-hero h2 {
       font-size: 42px;
       line-height: 42px; }
   .home h2 {

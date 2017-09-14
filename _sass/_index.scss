@@ -12,7 +12,21 @@
   }
 
   .pm-hero {
-    height: 620px;
+    background-image: linear-gradient(90deg, #232526, #fff), url("/images/website-cover.png");
+    background-size: cover;
+    background-color: white;
+    background-blend-mode: multiply, luminosity;
+    background-position: right top;
+    height: 100vh;
+    opacity: 0.9;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    .pm-intro {
+
+    }
 
     h1 {
       font-size: 90px;
@@ -23,7 +37,7 @@
     }
 
     p {
-      text-align: center;
+      text-align: left;
     }
   }
 
@@ -51,16 +65,16 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .home {
     .pm-hero {
       padding: 100px 30px 30px 30px;
+      height: 100vh;
 
-      h1 {
+      h2 {
         font-size: 42px;
         line-height: 42px;
       }
-
     }
 
     h2 {
