@@ -7,7 +7,6 @@ permalink: /academic/
 <div class="academic">
   <div class="pm-hero">
     <h1>My Academic Work</h1>
-    <p>I am currently working on my <b>Master's thesis</b> in the area of big data, machine learning and artificial intelligence.</p>
   </div>
   <section class="pm-section-academic pm-section container">
     <div class="headline col-xs-12 col-sm-8">
@@ -36,6 +35,24 @@ permalink: /academic/
            server is used to inject the system's client component and simulate peer-to-peer content
            delivery with real websites.
        </p>
+     </div>
+  </section>
+   <section class="pm-section-academic pm-section container">
+    <div class="headline col-xs-12 col-sm-8">
+        <h2>An End-to-End Machine Learning Approach for Predicting Passenger Demand of a Ride-hailing Service</h2>
+        <p>Chair of Connected Mobility</p>
+    </div>
+    <div class="col-xs-12 col-sm-4 tum-logo">
+       <img
+         src="https://coursera-university-assets.s3.amazonaws.com/2c/6b2e1799cc2e95901e763daac8d476/TUM-Logo_360x360px.png"/>
+    </div>
+    <div class="col-xs-12 col-sm-12">
+         <p>
+           <b>Responsible:</b> Prof. Dr.-Ing. Jörg Ott
+         </p>
+         <p>
+           <b>Advisor:</b> Dr. Wolfgang Wörndl
+         </p>
      </div>
   </section>
 </div>
