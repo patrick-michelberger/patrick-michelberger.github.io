@@ -1,7 +1,7 @@
 # Site settings
 title: Patrick Michelberger
 email: patrick.michelberger@tum.de
-description: > # I'm a student at TUM studying Information Systems and software developer living in Munich. Web: HTML/CSS/Javascript (Vanilla, Angular,Backbone,React,Node.js) | Mobile: Cordova(Phonegap) / Android  
+description: ""  
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://patrick.michelberger.info" # the base hostname & protocol for your site
 twitter_username: pmichelberger
