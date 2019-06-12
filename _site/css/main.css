@@ -159,6 +159,8 @@ a:focus {
   border: 4px solid white;
   top: 25px;
   position: relative; }
+.home .pm-story {
+  height: 100vh; }
 .home .pm-hero {
   background-image: url("/images/website-cover.png");
   background-image: url("/images/website-cover.png"), linear-gradient(90deg, #232526, #fff);
@@ -168,7 +170,7 @@ a:focus {
   background-position: right top;
   height: 100vh;
   opacity: 0.9;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: left; }
   .home .pm-hero h1 {

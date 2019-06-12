@@ -66,7 +66,7 @@ permalink: /projects/
     <div class="media">
       <div class="media-left">
         <a href="http://www.aboutyou.de/" target="_blank">
-          <img class="media-object" src="http://corporate.aboutyou.de/wp-content/uploads/2015/09/aboutyou_logo.jpg" style="width: 100px; height: 100px;" />
+          <img class="media-object" src="https://www.tradebyte.com/wp-content/uploads/2016/01/about-you_logo_final-1.png" style="width: 100px; height: 100px;" />
         </a>
       </div>
       <div class="media-body pm_text_normal">
